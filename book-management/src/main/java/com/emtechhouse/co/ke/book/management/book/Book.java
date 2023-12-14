@@ -17,7 +17,7 @@ public class Book {
     private String title;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "author_id")
+    @JoinColumn(name = "author")
     private Author author;
 
     private int publicationYear;
